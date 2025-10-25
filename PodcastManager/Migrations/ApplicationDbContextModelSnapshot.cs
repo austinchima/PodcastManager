@@ -54,7 +54,7 @@ namespace PodcastManager.Migrations
 
                     b.HasIndex("PodcastId");
 
-                    b.ToTable("Episodes");
+                    b.ToTable("Episodes", (string)null);
                 });
 
             modelBuilder.Entity("PodcastManager.Models.Podcast", b =>
@@ -81,7 +81,7 @@ namespace PodcastManager.Migrations
 
                     b.HasKey("PodcastId");
 
-                    b.ToTable("Podcasts");
+                    b.ToTable("Podcasts", (string)null);
                 });
 
             modelBuilder.Entity("PodcastManager.Models.Subscription", b =>
@@ -107,7 +107,7 @@ namespace PodcastManager.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Subscriptions");
+                    b.ToTable("Subscriptions", (string)null);
                 });
 
             modelBuilder.Entity("PodcastManager.Models.User", b =>
@@ -129,7 +129,7 @@ namespace PodcastManager.Migrations
 
                     b.HasKey("UserId");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
                 });
 
             modelBuilder.Entity("PodcastManager.Models.Episode", b =>
